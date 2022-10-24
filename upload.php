@@ -26,7 +26,7 @@ if (isset($_POST["submit"])) {
         $im_php = imagecrop($im_php, ['x' => ($sizeX - 300) / 2, 'y' => 0, 'width' => 300, 'height' => 300]);
 
         imageWebP($im_php, "bild.png", 80);
-        header("Location: http://localhost/");
+        header("Location: http://localhost/m152");
         exit;
     } else {
         echo "File is not an image.";
